@@ -1,3 +1,5 @@
+// uses port 8000 to serve http requests
+// uses port 8001 to serve ws requests
 const express = require("express");
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: process.env.WS_PORT || 8001 });
