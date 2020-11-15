@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-let port = process.env.PORT;
+let port = 8000;
 if (port == null || port == "") {
     port = 8000;
 }
