@@ -2,33 +2,47 @@
 <html lang="en">
 <head>
     <title>Jetpack Interface</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <style>
-        body {
+        #stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 150px 500px;
+            grid-template-rows: 500px;
             font-size: 200px;
         }
         #speed {
             margin: 20px;
             background-color: lightblue;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #battery {
             margin: 20px;
             background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #settings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-<div></div><div></div>
-<div id="speed">
-<p>20 MPH</p>
+<div id="settings">
+    <a href="settings.html"><button type="button" class="btn btn-primary btn-lg">Settings</button></a>
 </div>
-<div id="battery">
-
+<div id="stats">
+    <div id="speed">
+        <p>20 MPH</p>
+    </div>
+    <div id="battery">
+        <p>80%</p>
+    </div>
 </div>
 </body>
 </html>
